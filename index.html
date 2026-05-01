@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤️</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>For My Love ❤️</h1>
+  <p>Every moment with you is my favorite memory.</p>
+  <p id="counter"></p>
+</header>
+
+<section>
+  <h2>🌷 Daily Message For You - Changes Everyday</h2>
+
+  <div class="daily-card">
+    <p id="dailyMessage"></p>
+  </div>
+</section>
+
+<section>
+  <h2>📸 Our Memories</h2>
+
+  <div class="carousel">
+
+    <button class="prev" onclick="move(-1)">❮</button>
+
+    <div class="carousel-viewport">
+      <div class="carousel-track">
+
+        <div class="polaroid-card">
+          <img src="images/1.jpg">
+          <p>I still smile at this ❤️</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/2.jpg">
+          <p>My favorite person 💖</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/3.jpg">
+          <p>That perfect day 🌸</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/4.jpg">
+          <p>I’d relive this forever ✨</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/5.jpg">
+          <p>One of my favorite moments with you ❤️</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/6.jpg">
+          <p>Just us, and everything felt right 🌸</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/7.jpg">
+          <p>A memory I never want to forget ✨</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/8.jpg">
+          <p>I didn’t know I could be this happy 💕</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/9.jpg">
+          <p>Simple moment, but it meant everything</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/10.jpg">
+          <p>This day lives in my heart forever</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/11.jpg">
+          <p>You make even ordinary days special 💫</p>
+        </div>
+        
+        <div class="polaroid-card">
+          <img src="images/12.jpg">
+          <p>This is what happiness looks like to me ❤️</p>
+        </div>
+        
+        <div class="polaroid-card">
+          <img src="images/13.jpg">
+          <p>Everything felt softer with you around 🌷</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/14.jpg">
+          <p>My favorite person, my favorite memory</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/15.jpg">
+          <p>A quiet moment I’ll always cherish</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/16.jpg">
+          <p>I still smile every time I see this 💖</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/17.jpg">
+          <p>Just us, and everything felt right 🌸</p>
+        </div>
+
+        <div class="polaroid-card">
+          <img src="images/18.jpg">
+          <p>A memory I never want to forget ✨</p>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="next" onclick="move(1)">❯</button>
+
+  </div>
+</section>
+
+<section>
+  <h2>💌 Open When Letters</h2>
+
+  <div id="letterModal" class="modal" onclick="closeLetter()">
+  <div class="envelope" onclick="event.stopPropagation()">
+
+    <div class="flap"></div>
+
+    <div class="letter-content">
+      <h3 id="letterTitle"></h3>
+      <p id="letterText" class="handwritten"></p>
+    </div>
+
+    <button class="close-btn" onclick="closeLetter()">Close ❤️</button>
+
+  </div>
+</div>
+
+    <div class="letter-card" onclick="openLetter(0)">
+      💔 Open when you miss me
+    </div>
+
+    <div class="letter-card" onclick="openLetter(1)">
+      😔 Open when you're sad
+    </div>
+
+    <div class="letter-card" onclick="openLetter(2)">
+      🌙 Open when you can't sleep
+    </div>
+
+    <div class="letter-card" onclick="openLetter(3)">
+      💖 Open when you need love
+    </div>
+
+    <div class="letter-card" onclick="openLetter(4)">
+      🥺 Open when you feel alone
+    </div>
+
+    <div class="letter-card" onclick="openLetter(5)">
+      💞 Open when you want to smile
+    </div>
+
+    <div class="letter-card" onclick="openLetter(6)">
+  💖 Open when you miss us
+    </div>
+
+    <div class="letter-card" onclick="openLetter(7)">
+    🫶 Open when you need a reminder of my love
+    </div>
+
+  </div>
+
+  <!-- POPUP LETTER -->
+  <div id="letterModal" class="modal" onclick="closeLetter()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3 id="letterTitle"></h3>
+      <p id="letterText"></p>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>💭 Things I Want to Tell You One Day</h2>
+
+  <div class="thoughts-container">
+
+    <div class="thought-card">
+      I hope you always feel safe with me ❤️
+    </div>
+
+    <div class="thought-card">
+      I want to be someone you can always lean on 🫶
+    </div>
+
+    <div class="thought-card">
+      I imagine growing old and still laughing with you 💫
+    </div>
+
+    <div class="thought-card">
+      I never want you to doubt how much you mean to me 💖
+    </div>
+
+    <div class="thought-card">
+      I hope I can make your hardest days feel lighter 🌙
+    </div>
+
+    <div class="thought-card">
+      I choose you today, tomorrow, and always ❤️
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>🫙 100 Reasons Why I Love You</h2>
+
+  <div class="bottle-container">
+
+    <div class="bottle" onclick="openBottle()">
+      🫙
+      <p>Click the bottle 💖</p>
+    </div>
+
+  </div>
+
+  <!-- POPUP CARD -->
+<div id="reasonModal" class="modal" onclick="closeBottle()">
+  <div class="reason-card-popup" onclick="event.stopPropagation()">
+
+    <span class="close-x" onclick="closeBottle()">×</span>
+
+    <h3>One of the 100 reasons 💌</h3>
+    <p id="reasonText"></p>
+
+    <button onclick="openBottle()">Another one ❤️</button>
+  </div>
+</div>
+
+</section>
+
+<button class="surprise-btn" onclick="surprise()">Click me ❤️</button>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+  <source src="music/song.mp3" type="audio/mp3">
+</audio>
+
+<div class="music-control" onclick="toggleMusic()">🎵</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
